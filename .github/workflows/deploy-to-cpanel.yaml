@@ -31,3 +31,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: out/
           server-dir: /public_html/ # Path to the directory on your serve
+          dangerous-clean-slate: true
