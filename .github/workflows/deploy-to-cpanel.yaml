@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14" # will try node version 14 first, might be better with later version.
+          node-version: "18.17.0" # 14 Too low, lets try 18.17.0
 
       - name: Install dependencies
         run: npm install
