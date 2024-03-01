@@ -1,0 +1,33 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - master # We can change this if you prefer a different branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.17.0" # 14 Too low, lets try 18.17.0
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to cPanel
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: 162.215.219.175
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: out/
+          server-dir: / # Path to the directory on your serve
