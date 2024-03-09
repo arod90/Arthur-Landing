@@ -112,6 +112,7 @@ header {
 @media screen and (max-width: 900px) {
   main {
     padding: 0 30px;
+    overflow-x: hidden;
   }
 
   header {
@@ -120,8 +121,13 @@ header {
     justify-content: center;
   }
   .huella {
-    width: 80%;
+    width: 100%;
   }
+
+  .huella-img {
+    width: 100%;
+  }
+
   .procan {
     display: none;
   }
@@ -140,12 +146,17 @@ header {
 
   .paw-pic {
     width: 100%;
-    margin-left: 150px;
+    /* margin-left: 150px; */
   }
 
   .sumate {
     margin: 0;
     margin-top: 50px;
+    text-align: center;
+  }
+
+  .compras {
+    text-align: center;
   }
 
   .paw-pic-img {
@@ -158,6 +169,7 @@ header {
 
   .paw-pic {
     width: 100%;
+    margin-left: 80px;
   }
 
   .donaciones-plato {

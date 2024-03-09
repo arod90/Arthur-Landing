@@ -7,6 +7,7 @@ export default function Home() {
       <header>
         <div className="huella">
           <img
+            className="huella-img"
             src="/assets/huella.svg"
             alt="logotipo procan la huella de arthur"
           />
