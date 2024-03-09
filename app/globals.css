@@ -16,7 +16,12 @@
   }
 }
 
-body {
+.main {
+  background-image: url('/public/assets/back.png');
+  height: 100vh;
+}
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +35,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
