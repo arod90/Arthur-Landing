@@ -92,13 +92,136 @@ header {
   position: relative;
 }
 
+.donaciones-title,
 .donaciones-plato {
-  z-index: 2;
+  width: 50%; /* Take up 100% of the width of its container */
+  height: auto; /* Maintain aspect ratio */
 }
+
+/* .donaciones-plato {
+  z-index: 2;
+} */
 
 .donaciones-fill {
   position: absolute;
   top: 74%;
   left: 36%;
   z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0 30px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .huella {
+    width: 80%;
+  }
+  .procan {
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .paw-pic {
+    width: 100%;
+    margin-left: 150px;
+  }
+
+  .sumate {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .paw-pic-img {
+    position: relative;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .paw-pic {
+    width: 100%;
+  }
+
+  .donaciones-plato {
+    width: 80%; /* Take up 100% of the width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .donaciones-title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+  .compras {
+    font-size: 20px;
+  }
+
+  .sumate {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .paw-pic-img {
+    width: 100%;
+    position: absolute;
+    top: -15%;
+    left: -8%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .compras {
+    font-size: 25px;
+  }
+
+  .sumate {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .compras {
+    font-size: 30px;
+  }
+
+  .sumate {
+    font-size: 40px;
+  }
+
+  .donaciones {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .compras {
+    font-size: 40px;
+  }
+
+  .sumate {
+    font-size: 50px;
+  }
+  .donaciones {
+    padding-top: 300px;
+  }
 }

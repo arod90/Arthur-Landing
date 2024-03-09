@@ -54,11 +54,12 @@ export default function Home() {
           src="/assets/plato.svg"
           alt="grafica de un plato de alimento de mascota"
         />
-        <img
+        {/* TODO ask isa to generate various fills incorporated to the plate */}
+        {/* <img
           className="donaciones-fill"
           src="/assets/fill.svg"
           alt="relleno de el plato"
-        />
+        /> */}
       </section>
     </main>
   );
