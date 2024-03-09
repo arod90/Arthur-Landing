@@ -1,4 +1,104 @@
-.main {
+@font-face {
+  font-family: 'BergenSans';
+  src: url(/fonts/BergenSans-Regular.otf);
+}
+
+@font-face {
+  font-family: 'BergenSans-Bold';
+  src: url(/fonts/BergenSans-Bold.otf);
+}
+
+main {
   background-image: url('/assets/back.png');
-  height: 100vh;
+  background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+  background-position: top center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  height: fit-content;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.huella {
+  margin-top: 50px;
+  width: 15vw;
+}
+
+.procan {
+  width: 10vw;
+}
+
+.logo-procan {
+  margin-top: 60px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 120px;
+}
+
+.title {
+  width: 85%;
+}
+
+.compras {
+  width: 100%;
+  font-family: 'BergenSans';
+  font-size: x-large;
+}
+
+.compras-bold {
+  font-family: 'BergenSans-Bold';
+}
+
+.sumate {
+  width: 100%;
+  font-family: 'BergenSans-Bold';
+  font-size: xx-large;
+  color: #e91d24;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding-top: 100px;
+}
+
+.paw-pic {
+  width: 45%;
+  position: relative;
+}
+
+.paw-pic-img {
+  width: 100%;
+  position: absolute;
+  top: -30%;
+  left: -8%;
+}
+
+.donaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+.donaciones-plato {
+  z-index: 2;
+}
+
+.donaciones-fill {
+  position: absolute;
+  top: 74%;
+  left: 36%;
+  z-index: 1;
 }
