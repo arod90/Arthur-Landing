@@ -16,6 +16,11 @@ main {
   height: fit-content;
 }
 
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -123,6 +128,10 @@ header {
   padding: 0 100px;
 }
 
+.quien-title {
+  margin-bottom: 30px;
+}
+
 .pic-cont-desk {
   display: flex;
   flex-direction: column;
@@ -186,20 +195,27 @@ header {
   width: 30%;
 }
 
+.mora-desk {
+  width: 20%;
+  height: auto;
+}
+
 .iframe-cont {
   background-color: white;
   padding: 10px 10px 40px 10px;
   border-radius: 10px;
+  height: 40vh;
 }
 
 .iframe-cont iframe {
   margin-bottom: 20px;
   border-radius: 10px;
   width: 100%;
+  height: 85%;
 }
 
 .iframe-cont span {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -272,6 +288,14 @@ header {
   .paw-pic {
     width: 100%;
     /* margin-left: 150px; */
+  }
+
+  .paw-pic-img {
+    width: 80%;
+    position: absolute;
+    left: 42%;
+    transform: translateX(-50%);
+    margin-left: 0px;
   }
 
   .sumate {
@@ -396,6 +420,19 @@ header {
   .poster-mob {
     width: 35%;
   }
+  .map-cont {
+    width: 100%;
+  }
+
+  .donacion {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+  }
 
   .iframe-cont {
     background-color: white;
@@ -407,17 +444,8 @@ header {
   .iframe-cont iframe {
     margin-top: 10px;
     width: fit-content;
-    height: 40vh;
+    height: 85%;
     width: 100%;
-  }
-
-  .donacion {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
   }
 
   .dona-desk {
@@ -430,7 +458,9 @@ header {
 
   .map-cont {
     margin-top: 20px;
-    height: 600px;
+    /* height: 600px; */
+    width: 100%;
+    margin-bottom: 100px;
   }
 }
 
