@@ -109,6 +109,93 @@ header {
   z-index: 1;
 }
 
+/* QUIEN ES */
+
+.quien {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.pic-cont-desk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.top-desk {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-desk {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeholder-desk {
+  margin-top: 50px;
+}
+
+/* Trailer */
+
+.trailer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.iframe-cont {
+  background-color: white;
+  padding: 10px 10px 40px 10px;
+  border-radius: 10px;
+}
+
+.iframe-cont iframe {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.iframe-cont span {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+/* MAP */
+.donacion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+}
+
+.map-cont,
+.dona-desk {
+  flex: 1;
+  height: 80%;
+  width: 100%;
+}
+
+.map-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 900px) {
   main {
     padding: 0 30px;
@@ -119,17 +206,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .huella {
     width: 100%;
+    padding: 0;
+  }
+  .procan {
+    display: none;
   }
 
   .huella-img {
     width: 100%;
   }
 
-  .procan {
-    display: none;
+  .huella {
+    width: 70%;
   }
 
   .hero {
@@ -165,6 +254,7 @@ header {
 
   .hero-text {
     width: 100%;
+    padding-top: 50px;
   }
 
   .paw-pic {
