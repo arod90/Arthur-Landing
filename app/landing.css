@@ -17,7 +17,7 @@ main {
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -101,15 +101,15 @@ header {
   display: none;
 }
 
-.donaciones-title,
-.donaciones-plato {
-  width: 50%; /* Take up 100% of the width of its container */
+.donaciones-title {
+  width: 65%; /* Take up 100% of the width of its container */
   height: auto; /* Maintain aspect ratio */
 }
 
-/* .donaciones-plato {
-  z-index: 2;
-} */
+.donaciones-plato {
+  width: 45%; /* Take up 100% of the width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
 
 .donaciones-fill {
   position: absolute;
@@ -130,6 +130,7 @@ header {
 
 .quien-title {
   margin-bottom: 30px;
+  width: 70%;
 }
 
 .pic-cont-desk {
@@ -187,7 +188,7 @@ header {
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 50px;
 }
 
@@ -465,30 +466,46 @@ header {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1600px) {
+  .title {
+    width: 75%;
+    margin-top: -60px;
+  }
   .compras {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .sumate {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 25px;
   }
 
   .paw-pic-img {
-    width: 100%;
+    width: 200%;
     position: absolute;
-    top: -15%;
-    left: -8%;
+    top: -35%;
+    left: -12%;
   }
 }
 
 @media screen and (min-width: 1600px) {
+  .title {
+    width: 70%;
+    margin-top: -70px;
+  }
+
+  .paw-pic-img {
+    width: 90%;
+    position: absolute;
+    top: -39%;
+    left: -12%;
+  }
+
   .compras {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .sumate {
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 25px;
   }
 }
